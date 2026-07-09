@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Optimization -->
+    <title>Akshara M | Data Scientist & AI/ML Engineer</title>
+    <meta name="description" content="Portfolio of Akshara M, an aspiring Data Scientist and AI/ML Engineer pursuing a B.Tech in Information Science & Engineering. Explore AI projects, Deep Learning applications, and analytics models.">
+    <meta name="keywords" content="Akshara M, Data Science, AI, Machine Learning, Deep Learning, Information Science, B.Tech, Portfolio, Python, SQL, Neural Networks">
+    <meta name="author" content="Akshara M">
+
+    <!-- Open Graph Metadata (for LinkedIn, Twitter, etc.) -->
+    <meta property="og:title" content="Akshara M | Data Scientist & AI/ML Engineer Portfolio">
+    <meta property="og:description" content="Empowering decisions through analytics and AI. View the portfolio of Akshara M, featuring machine learning, deep learning, and data engineering projects.">
+    <meta property="og:image" content="assets/project.jpg">
+    <meta property="og:url" content="https://github.com/algo-akshara">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Akshara M | Data Scientist & AI/ML Engineer">
+    <meta name="twitter:description" content="Discover premium AI, Machine Learning, and Data Science projects.">
+    <meta name="twitter:image" content="assets/project.jpg">
+
+    <!-- Favicon Placeholder (using SVG Data URL for clean modern asset loading) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+
+    <!-- Preconnect Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Background Canvas Particles -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Glowing Blobs -->
+    <div class="blur-blob blob-pink"></div>
+    <div class="blur-blob blob-lavender"></div>
+
+    <!-- Navigation Header -->
+    <header id="header">
+        <div class="container">
+            <a href="#home" class="logo" id="nav-logo">
+                AKSHARA M<span class="logo-dot"></span>
+            </a>
+            
+            <nav>
+                <ul class="nav-links" id="nav-menu">
+                    <li><a href="#home" class="active" id="nav-link-home">Home</a></li>
+                    <li><a href="#about" id="nav-link-about">About</a></li>
+                    <li><a href="#skills" id="nav-link-skills">Skills</a></li>
+                    <li><a href="#projects" id="nav-link-projects">Projects</a></li>
+                    <li><a href="#contact" id="nav-link-contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main>
+        
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="container">
+                
+                <div class="hero-content reveal">
+                    <div class="hero-badge">AI/ML Engineer & Data Scientist</div>
+                    
+                    <h1 class="hero-title">
+                        Empowering decisions <br>through 
+                        <span class="gradient-text">analytics</span> and 
+                        <span class="gradient-text">AI.</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        I'm Akshara M, an aspiring Data Scientist and AI/ML Engineer passionate about transforming raw data into intelligent solutions using Machine Learning, Deep Learning, and Data Analytics. I enjoy building impactful AI projects that bridge technology and real-world challenges while continuously learning emerging technologies.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary" id="hero-cta-projects">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary" id="hero-cta-contact">Download Resume</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal reveal-delay-2">
+                    <div class="profile-circle-container">
+                        <div class="profile-glow"></div>
+                        <div class="profile-ring"></div>
+                        <div class="profile-ring-inner"></div>
+                        <div class="profile-placeholder">
+                            <!-- Premium generated headshot. If not found locally, uses stylish CSS gradient fallback -->
+                            <img src="assets/profile.jpg" alt="Akshara M" onerror="this.classList.add('fallback'); this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';">
+                        </div>
+                    </div>
+
+                    <!-- Floating AI-Themed Elements (SVG Drawings) -->
+                    
+                    <!-- Python Icon -->
+                    <div class="floating-element fe-python" title="Python">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M2.002 9.63c0-3.567 2.878-4.902 6.028-4.902h1.616V6.36H6.388c-2.316 0-3.082.986-3.082 2.766V11.2h3.1v.968h-4.4c-1.127 0-2.004-.84-2.004-1.956v-.582zM21.998 14.37c0 3.567-2.878 4.902-6.028 4.902h-1.616v-1.632h3.256c2.316 0 3.082-.986 3.082-2.766v-2.074h-3.1v-.968h4.4c1.127 0 2.004.84 2.004 1.956v.582zM12.016 2.002c3.484 0 4.887 2.806 4.887 5.877v1.575h-1.593v-3.18c0-2.257-.962-3.003-2.7-3.003h-2.023v3.023h-.944V2.002h2.373zM11.984 21.998c-3.484 0-4.887-2.806-4.887-5.877v-1.575h1.593v3.18c0 2.257.962 3.003 2.7 3.003h2.023v-3.023h.944v4.292h-2.373z"/>
+                        </svg>
+                    </div>
+
+                    <!-- SQL Icon -->
+                    <div class="floating-element fe-sql" title="SQL Database">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 4.02 2 6.5s4.48 4.5 10 4.5 10-2.02 10-4.5S17.52 2 12 2zm0 6.5c-3.87 0-7-1.12-7-2.5s3.13-2.5 7-2.5 7 1.12 7 2.5-3.13 2.5-7 2.5zm7 1.5c-.75.34-1.78.63-2.99.85.74.52 1.34 1.17 1.76 1.9.89-.28 1.63-.64 2.23-1.07V9.75c-.32.09-.65.17-1 .25zm-14 0c-.35-.08-.68-.16-1-.25v1.18c.6.43 1.34.79 2.23 1.07.42-.73 1.02-1.38 1.76-1.9-1.21-.22-2.24-.51-2.99-.85zM12 12.5c-3.87 0-7-1.12-7-2.5v2c0 1.38 3.13 2.5 7 2.5s7-1.12 7-2.5v-2c0 1.38-3.13 2.5-7 2.5zm7 1.5c-.75.34-1.78.63-2.99.85.74.52 1.34 1.17 1.76 1.9.89-.28 1.63-.64 2.23-1.07v-1.18c-.32.09-.65.17-1 .25zm-14 0c-.35-.08-.68-.16-1-.25v1.18c.6.43 1.34.79 2.23 1.07.42-.73 1.02-1.38 1.76-1.9-1.21-.22-2.24-.51-2.99-.85zM12 17.5c-3.87 0-7-1.12-7-2.5v2c0 1.38 3.13 2.5 7 2.5s7-1.12 7-2.5v-2c0 1.38-3.13 2.5-7 2.5z"/>
+                        </svg>
+                    </div>
+
+                    <!-- Neural Network Icon -->
+                    <div class="floating-element fe-brain" title="Neural Networks">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                    </div>
+
+                    <!-- ML Nodes Icon -->
+                    <div class="floating-element fe-nodes" title="Machine Learning">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2zm5.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" opacity="0.3"/>
+                            <circle cx="6" cy="12" r="3" fill="currentColor"/>
+                            <circle cx="18" cy="6" r="3" fill="currentColor"/>
+                            <circle cx="18" cy="18" r="3" fill="currentColor"/>
+                            <line x1="9" y1="12" x2="15" y2="7" stroke="currentColor" stroke-width="2"/>
+                            <line x1="9" y1="12" x2="15" y2="17" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+
+                    <!-- Data Viz Chart Icon -->
+                    <div class="floating-element fe-chart" title="Data Analytics">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                        </svg>
+                    </div>
+
+                    <!-- Code Snippet Card -->
+                    <div class="floating-code">
+                        <span>import</span> tensorflow <span>as</span> tf<br>
+                        model = tf.keras.Sequential()
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ABOUT ME SECTION -->
+        <section id="about">
+            <div class="container">
+                
+                <div class="about-grid">
+                    
+                    <div class="about-text reveal">
+                        <div class="section-title-wrapper">
+                            <span class="section-subtitle">Biography</span>
+                            <h2 class="section-title">Aspiring to build intelligent systems.</h2>
+                        </div>
+                        
+                        <p class="about-desc">
+                            I am currently pursuing a Bachelor of Technology in Information Science & Engineering with a strong interest in Artificial Intelligence, Machine Learning, Data Science, and Deep Learning. I enjoy solving complex problems using data-driven approaches and continuously explore emerging AI technologies. My goal is to build intelligent systems that create meaningful real-world impact through analytics and innovation.
+                        </p>
+                    </div>
+
+                    <div class="about-visual reveal reveal-delay-2">
+                        <div class="about-photo-wrapper">
+                            <div class="about-photo-glow"></div>
+                            <!-- Premium generated headshot. If not found locally, uses stylish CSS gradient fallback -->
+                            <img src="assets/profile.jpg" alt="Akshara M" onerror="this.classList.add('fallback'); this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';">
+                        </div>
+
+                        <!-- Quick Stats Bento Grid -->
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-icon">🎓</span>
+                                <div class="stat-info">
+                                    <span>Education</span>
+                                    <p>B.Tech Student</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-icon">🤖</span>
+                                <div class="stat-info">
+                                    <span>Specialization</span>
+                                    <p>AI & ML Enthusiast</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-icon">📊</span>
+                                <div class="stat-info">
+                                    <span>Focus</span>
+                                    <p>Data Scientist</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-icon">💼</span>
+                                <div class="stat-info">
+                                    <span>Availability</span>
+                                    <p>Open to Internships</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills">
+            <div class="container">
+                
+                <div class="section-title-wrapper reveal">
+                    <span class="section-subtitle">Technical Arsenal</span>
+                    <h2 class="section-title">My Skills & Expertise</h2>
+                </div>
+
+                <div class="skills-grid">
+                    
+                    <!-- Programming -->
+                    <div class="skill-category glow-card reveal">
+                        <div class="skill-category-header">
+                            <span class="skill-category-icon">
+                                <svg viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+                            </span>
+                            <h3>Programming</h3>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">SQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Data Science -->
+                    <div class="skill-category glow-card reveal reveal-delay-1">
+                        <div class="skill-category-header">
+                            <span class="skill-category-icon">
+                                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+                            </span>
+                            <h3>Data Science</h3>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="skill-badge">Data Cleaning</span>
+                            <span class="skill-badge">Data Preprocessing</span>
+                            <span class="skill-badge">Exploratory Data Analysis</span>
+                            <span class="skill-badge">Data Visualization</span>
+                        </div>
+                    </div>
+
+                    <!-- Machine Learning -->
+                    <div class="skill-category glow-card reveal reveal-delay-2">
+                        <div class="skill-category-header">
+                            <span class="skill-category-icon">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg>
+                            </span>
+                            <h3>Machine Learning</h3>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="skill-badge">Scikit-learn</span>
+                            <span class="skill-badge">Regression</span>
+                            <span class="skill-badge">Classification</span>
+                            <span class="skill-badge">Clustering</span>
+                        </div>
+                    </div>
+
+                    <!-- Deep Learning -->
+                    <div class="skill-category glow-card reveal">
+                        <div class="skill-category-header">
+                            <span class="skill-category-icon">
+                                <svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.9-1.9C9.07 19.58 10.48 20 12 20c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 15c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg>
+                            </span>
+                            <h3>Deep Learning</h3>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="skill-badge">TensorFlow</span>
+                            <span class="skill-badge">Keras</span>
+                            <span class="skill-badge">Artificial Neural Networks</span>
+                            <span class="skill-badge">Convolutional Neural Networks</span>
+                        </div>
+                    </div>
+
+                    <!-- Artificial Intelligence -->
+                    <div class="skill-category glow-card reveal reveal-delay-1">
+                        <div class="skill-category-header">
+                            <span class="skill-category-icon">
+                                <svg viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C8.75 12.1 8 10.61 8 9c0-2.21 1.79-4 4-4s4 1.79 4 4c0 1.61-.75 3.1-2.15 4.1z"/></svg>
+                            </span>
+                            <h3>Artificial Intelligence</h3>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="skill-badge">Natural Language Processing</span>
+                            <span class="skill-badge">Prompt Engineering</span>
+                            <span class="skill-badge">LLM Fundamentals</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-category glow-card reveal reveal-delay-2">
+                        <div class="skill-category-header">
+                            <span class="skill-category-icon">
+                                <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.3C.5 6.7.9 9.8 2.9 11.8c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.1z"/></svg>
+                            </span>
+                            <h3>Tools</h3>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="skill-badge">Git</span>
+                            <span class="skill-badge">GitHub</span>
+                            <span class="skill-badge">Jupyter Notebook</span>
+                            <span class="skill-badge">Google Colab</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FEATURED PROJECTS -->
+        <section id="projects">
+            <div class="container">
+                
+                <div class="section-title-wrapper reveal">
+                    <span class="section-subtitle">Featured Project</span>
+                    <h2 class="section-title">Showcase of AI Innovation</h2>
+                </div>
+
+                <div class="projects-container reveal reveal-delay-1">
+                    
+                    <div class="project-hero-card">
+                        
+                        <div class="project-image-side">
+                            <!-- Premium generated project image. If not found locally, uses stylish CSS gradient fallback -->
+                            <img src="assets/project.jpg" alt="Smart Cooling Corridors Project" onerror="this.classList.add('fallback'); this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';">
+                            <div class="project-image-overlay"></div>
+                        </div>
+
+                        <div class="project-content-side">
+                            <span class="project-badge-tag">Featured Project</span>
+                            
+                            <h3 class="project-title">Smart Cooling Corridors</h3>
+                            
+                            <p class="project-desc">
+                                An AI-powered urban heat mitigation solution that analyzes satellite imagery and environmental data to identify optimal cooling corridors for sustainable smart cities. By identifying urban heat islands and tracking thermal gradients, the deep learning model outlines actionable paths for municipal greening initiatives.
+                            </p>
+
+                            <div class="project-tech-list">
+                                <span class="project-tech-tag">Python</span>
+                                <span class="project-tech-tag">TensorFlow</span>
+                                <span class="project-tech-tag">GIS</span>
+                                <span class="project-tech-tag">Deep Learning</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com/algo-akshara/Nvidia-Internship-AIML-Internship-2026" class="btn btn-primary" target="_blank" rel="noopener noreferrer" id="project-github-link">
+                                    <svg viewBox="0 0 24 24" style="width:18px; height:18px; fill:currentColor; margin-right:4px;">
+                                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                                    </svg>
+                                    GitHub
+                                </a>
+                                <a href="https://github.com/algo-akshara/Nvidia-Internship-AIML-Internship-2026" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" id="project-demo-link">Live Demo</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EDUCATION & EXPERIENCE (TIMELINE) -->
+        <section id="experience">
+            <div class="container">
+                
+                <div class="section-title-wrapper reveal">
+                    <span class="section-subtitle">Milestones</span>
+                    <h2 class="section-title">Education & Experience</h2>
+                </div>
+
+                <div class="timeline-container">
+                    
+                    <!-- B.Tech -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-meta">
+                            <span class="timeline-tag">Education</span>
+                            <span class="timeline-date">2023 - 2027</span>
+                        </div>
+                        <div class="timeline-card">
+                            <h3>Bachelor of Technology</h3>
+                            <div class="timeline-institution">Information Science & Engineering</div>
+                            <p>Pursuing an engineering degree focused on algorithms, software design, analytics, and information theory. Gained core experience in structural databases, programming principles, and data analysis pipelines.</p>
+                        </div>
+                    </div>
+
+                    <!-- Internship -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-meta">
+                            <span class="timeline-tag">Experience</span>
+                            <span class="timeline-date">2026</span>
+                        </div>
+                        <div class="timeline-card">
+                            <h3>Data Science Intern</h3>
+                            <div class="timeline-institution">AI & ML Research Group</div>
+                            <p>Applied analytical models to real-world datasets, streamlined data cleaning and preprocessing pipelines, and evaluated machine learning classifiers to enhance forecast reliability and decision systems.</p>
+                        </div>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-meta">
+                            <span class="timeline-tag">Certifications</span>
+                            <span class="timeline-date">Continuous Learning</span>
+                        </div>
+                        <div class="timeline-card">
+                            <h3>Professional Certifications</h3>
+                            <div class="timeline-institution">Stanford & DeepLearning.AI</div>
+                            <p>To deepen theoretical and application capabilities in the field, completed specialized training modules covering:</p>
+                            <ul>
+                                <li>Machine Learning (Supervised/Unsupervised Learning)</li>
+                                <li>Deep Learning (Neural Networks, CNNs, Optimization)</li>
+                                <li>Natural Language Processing (RNNs, Transformers, Attention Mechanism)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section id="testimonials">
+            <div class="container">
+                
+                <div class="section-title-wrapper reveal">
+                    <span class="section-subtitle">Endorsements</span>
+                    <h2 class="section-title">Academic & Professional Feedback</h2>
+                </div>
+
+                <div class="testimonials-grid">
+                    
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card reveal">
+                        <span class="quote-icon">“</span>
+                        <p class="testimonial-quote">
+                            Akshara possesses a remarkable capacity for structural analysis. Her approach to coding challenges and algorithmic formulations is systematic, logical, and highly creative. She has a bright future ahead in AI.
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                            </div>
+                            <div class="author-info">
+                                <h4>Dr. Ramesh Kumar</h4>
+                                <p>Professor, Information Science Dept.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card reveal reveal-delay-1">
+                        <span class="quote-icon">“</span>
+                        <p class="testimonial-quote">
+                            Working with Akshara on data analytics pipelines was a pleasure. She demonstrated excellent problem-solving ability, quickly grasping new concepts in deep learning and executing with impressive precision.
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                            </div>
+                            <div class="author-info">
+                                <h4>Sarah Jenkins</h4>
+                                <p>Senior Data Scientist & Research Mentor</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card reveal reveal-delay-2">
+                        <span class="quote-icon">“</span>
+                        <p class="testimonial-quote">
+                            Akshara's dedication to quality is evident in her project work. Her Smart Cooling Corridors model showed her capacity to synthesize deep learning architectures with geospatial insights to solve complex urban issues.
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                            </div>
+                            <div class="author-info">
+                                <h4>Vikas Mehta</h4>
+                                <p>AI Project Collaborator & ML Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <div class="container">
+                
+                <div class="section-title-wrapper reveal" style="text-align: center;">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title" style="margin-bottom: 1rem;">Let's Connect</h2>
+                    <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);">Interested in internships, project collaborations, or discussing artificial intelligence? Feel free to reach out using the form below!</p>
+                </div>
+
+                <div class="contact-card-container reveal reveal-delay-1">
+                    <div class="contact-card">
+                        
+                        <form class="contact-form" id="contact-form-el">
+                            
+                            <!-- Form submission status overlay -->
+                            <div class="form-status" id="form-status-msg"></div>
+
+                            <div class="form-group">
+                                <label for="form-name" class="form-label">Full Name</label>
+                                <input type="text" id="form-name" class="form-input" placeholder="Your Name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-email" class="form-label">Email Address</label>
+                                <input type="email" id="form-email" class="form-input" placeholder="yourname@domain.com" required>
+                            </div>
+
+                            <div class="form-group form-group-full">
+                                <label for="form-subject" class="form-label">Subject</label>
+                                <input type="text" id="form-subject" class="form-input" placeholder="What is this regarding?" required>
+                            </div>
+
+                            <div class="form-group form-group-full">
+                                <label for="form-message" class="form-label">Message</label>
+                                <textarea id="form-message" class="form-textarea" placeholder="Your message here..." required></textarea>
+                            </div>
+
+                            <div class="contact-btn-wrapper">
+                                <button type="submit" class="btn btn-primary" id="contact-submit-btn">Send Message</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+
+                <!-- Social Media Channels -->
+                <div class="contact-socials-wrapper reveal">
+                    <span class="socials-title">Explore My Work & Networks</span>
+                    <div class="social-icons">
+                        
+                        <!-- GitHub -->
+                        <a href="https://github.com/algo-akshara" class="social-icon" target="_blank" rel="noopener noreferrer" title="GitHub" id="social-github">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                            </svg>
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://linkedin.com" class="social-icon" target="_blank" rel="noopener noreferrer" title="LinkedIn" id="social-linkedin">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+
+                        <!-- Twitter/X -->
+                        <a href="https://twitter.com" class="social-icon" target="_blank" rel="noopener noreferrer" title="Twitter / X" id="social-twitter">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+
+                        <!-- Email -->
+                        <a href="mailto:akshara@example.com" class="social-icon" title="Send Email" id="social-email">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p class="footer-copy">&copy; 2026 Akshara M. All Rights Reserved.</p>
+            <p class="footer-tech">Made with ❤️ using <span>HTML</span>, <span>CSS</span> &amp; <span>JavaScript</span>.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Floating Button -->
+    <button class="back-to-top" id="back-to-top-btn" aria-label="Scroll back to top">
+        <svg viewBox="0 0 24 24">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </button>
+
+    <!-- Project JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
